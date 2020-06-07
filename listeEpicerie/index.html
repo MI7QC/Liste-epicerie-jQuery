@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html>
 <style>
-    a {
-        background-color: darkcyan;
+    #liste {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color: #2196F3;
+        padding: 10px;
+    }
+
+    #liste-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        margin: 10px;
     }
 </style>
 
 <body>
-    <h2>jquery Liste des courses</h2>
-    <input type="text" id="zone_saisie" name="zone_saisie" value=""><br>
+    <h1>jquery Liste des courses</h1>
+    <input type="text" id="zone_saisie" name="zone_saisie" value="" /><br>
     <ul id="liste"></ul>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script/main.js"></script>
